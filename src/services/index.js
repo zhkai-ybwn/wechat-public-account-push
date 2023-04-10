@@ -893,11 +893,17 @@ export const getAggregatedData = async () => {
     }].filter((it) => it.value)
 
     // 天行-天气
-    const tianApiWeather = (await getTianApiWeather(user) || []).map((it, index) => Object.keys((it)).filter((weatherKey) => ['province', 'area', 'weatherimg'].indexOf(weatherKey) === -1).map((key) => ({
-      name: toLowerLine(`tianApiWeather_${key}_${index}`),
-      value: it[key],
-      color: getColor(),
-    }))).flat()
+    const tianApiWeather = (await getTianApiWeather(user) || []).map((it, index) => Object.keys((it)).filter((weatherKey) => ['province', 'area', 'weatherimg'].indexOf(weatherKey) === -1).map((key) => {
+      if (key == "tips") {
+        it[key] = it[key].replace('年老体弱者请适当增减衣服。防护不松懈，出门带口罩。', '')
+      }
+      return {
+        name: toLowerLine(`tianApiWeather_${key}_${index}`),
+        value: it[key],
+        color: getColor(),  
+      }
+    }
+    )).flat()
 
     // 天行-热榜
     const tianApiNetworkHot = [{
