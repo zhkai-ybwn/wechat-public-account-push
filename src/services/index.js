@@ -953,6 +953,7 @@ export const getAggregatedData = async () => {
       .concat(wxPoetryContent)
       .concat(wxHolidaytts)
 
+    console.log(wxTemplateParams)
     user.wxTemplateParams = wxTemplateParams
   }
 
