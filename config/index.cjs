@@ -8,71 +8,43 @@
 const USER_CONFIG = {
 
   // 使用微信测试号：公众号APP_ID
-  APP_ID: 'wx44cb4bee91880a13',
+  APP_ID: 'wx072d3f10226dc808',
 
   // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: 'a4de74d4e74e4bc6db4b276b259536ab',
+  APP_SECRET: 'e5bef4eb203b68bbe9f319c987600ab7',
 
   IS_SHOW_COLOR: true,
 
-  PROVINCE: '四川',
-  CITY: '成都',
+  PROVINCE: '江苏',
+  CITY: '南京',
 
   USERS: [
     {
       // 想要发送的人的名字
-      name: '婉婉',
+      name: '宝宝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oCvAF54D95S1Ja01xKQyc2gNiMok',
+      id: 'oJfU26fQkAkucX2Sp2Zwb0sYWlsM',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'iqoaoqUxo7eX0ZzsWZLn4oqObO0OuDxlzynY-XZzxaU',
+      useTemplateId: '	s7kyfZv42S7FqYYrkBes8pVWvPaoyKDCQmXEI65VDjw',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '07-10',
+      horoscopeDate: '06-30',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '婉婉阴历生日', year: '1996', date: '05-19',
+          type: '*生日', name: '宝宝阴历生日', year: '1988', date: '05-17',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '婉婉阳历生日', year: '1996', date: '07-10',
+          type: '生日', name: '宝宝阳历生日', year: '1988', date: '06-30',
         },
         {
-          type: '节日', name: '在一起纪念日', year: '2023', date: '02-09',
+          type: '节日', name: '在一起纪念日', year: '2024', date: '01-22',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2023-02-09' },
-      ],
-    },
-    {
-      // 想要发送的人的名字
-      name: '桐桐',
-      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oCvAF50R79N3aNN7gykFz3jT2dHU',
-      // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'iqoaoqUxo7eX0ZzsWZLn4oqObO0OuDxlzynY-XZzxaU',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '07-10',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '婉婉阴历生日', year: '1996', date: '05-19',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '婉婉阳历生日', year: '1996', date: '07-10',
-        },
-        {
-          type: '节日', name: '在一起纪念日', year: '2023', date: '02-09',
-        },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2023-02-09' },
+        { keyword: 'love_day', date: '2024-01-22' },
       ],
     },
   ],
@@ -149,7 +121,7 @@ const USER_CONFIG = {
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oCvAF50R79N3aNN7gykFz3jT2dHU',
+      id: 'oJfU26fQkAkucX2Sp2Zwb0sYWlsM',
     }
   ],
 
